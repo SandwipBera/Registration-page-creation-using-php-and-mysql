@@ -1,0 +1,112 @@
+body{
+    background-image:url("300.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+.background{
+    width: 1000px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}   
+form{
+    height: 500px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #0a0a0a;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 26px;
+    font-weight: 100;
+    line-height: 10px;
+    text-align: center;
+    color: rgb(5, 6, 6);
+    font-style:initial;
+}
+label{
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 50;
+}
+input{
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(33, 30, 30, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 100;
+}
+::placeholder{
+    color: #000000;
+}
+button{
+    width: 100%;
+    padding: 9px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #db50b6;
+    background: transparent;
+    color: #080808;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden
+}
+
+
+  span{
+    background: #dedbdc;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.social{
+    margin-top: 5px;
+    display: flex;
+  }
+  .social div{
+    background: red;
+    width: 150px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    background-color: rgba(255,255,255,0.27);
+    color: #1562f1;
+    text-align: center;
+  }
+  .social div:hover{
+    background-color: rgba(255,255,255,0.47);
+  }
